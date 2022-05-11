@@ -15,7 +15,7 @@ body {
     width: 600px;
     border-radius: 50%;
     position: relative;
-    background-image: url('./clock-frame.png');
+    background-image: url('clock-frame.png');
     background-position: 90px 60px;
     background-size: 70%;
     background-repeat: no-repeat;
