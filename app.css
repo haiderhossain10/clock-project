@@ -17,13 +17,6 @@ body {
     width: clamp(150px, 50vw, 250px);
     border-radius: 50%;
     position: relative;
-<<<<<<< HEAD
-=======
-    background-image: url('clock-frame.png');
-    background-position: 90px 60px;
-    background-size: 70%;
-    background-repeat: no-repeat;
->>>>>>> 5b6db2a449aa062431e0275d214b2c74dea23d0b
 }
 
 .clock::after {
