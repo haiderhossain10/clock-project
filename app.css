@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.clock {
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    position: relative;
+    background-image: url('./clock-frame.png');
+    background-position: 90px 60px;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+.clock::after {
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: #ffa3a3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+
+.clock span {
+    position: absolute;
+    inset: 30%;
+    text-align: center;
+    transform: rotate(calc(30deg * var(--i)));
+    font-weight: 600;
+    font-size: 24px;
+    color: #1465bf;
+}
+
+.circle {
+    position: absolute;
+    height: 80px;
+    width: 2px;
+    background-color: var(--color);
+    bottom: 5px;
+    transform-origin: bottom;
+    border-radius: 50px;
+}
+
+.clock-number {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 10px;
+    width: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.circle-minute {
+    height: 60px;
+    width: 3px;
+}
+
+.circle-hour {
+    height: 40px;
+    width: 6px;
+}
